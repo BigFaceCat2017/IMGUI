@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		187BE2862270D52200033424 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 187BE2852270D52100033424 /* Metal.framework */; };
+		194F3B3D218327B10070F5BC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194F3B3C218327B10070F5BC /* Foundation.framework */; };
+		194F3BAD218328020070F5BC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194F3BA6218328020070F5BC /* CoreGraphics.framework */; };
+		194F3BB2218328020070F5BC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194F3BAB218328020070F5BC /* UIKit.framework */; };
+		602704CE29F7C8FD000DE9F8 /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 602704CD29F7C8FD000DE9F8 /* MetalKit.framework */; };
+		602704D829F7CC13000DE9F8 /* PubgLoad.h in Headers */ = {isa = PBXBuildFile; fileRef = 602704D029F7CC13000DE9F8 /* PubgLoad.h */; };
+		602704D929F7CC13000DE9F8 /* JHPP.h in Headers */ = {isa = PBXBuildFile; fileRef = 602704D129F7CC13000DE9F8 /* JHPP.h */; };
+		602704DA29F7CC13000DE9F8 /* JHUIViewControllerDecoupler.m in Sources */ = {isa = PBXBuildFile; fileRef = 602704D229F7CC13000DE9F8 /* JHUIViewControllerDecoupler.m */; };
+		602704DB29F7CC13000DE9F8 /* JHDragView.m in Sources */ = {isa = PBXBuildFile; fileRef = 602704D329F7CC13000DE9F8 /* JHDragView.m */; };
+		602704DC29F7CC13000DE9F8 /* PubgLoad.mm in Sources */ = {isa = PBXBuildFile; fileRef = 602704D429F7CC13000DE9F8 /* PubgLoad.mm */; };
+		602704DD29F7CC13000DE9F8 /* JHUIViewControllerDecoupler.h in Headers */ = {isa = PBXBuildFile; fileRef = 602704D529F7CC13000DE9F8 /* JHUIViewControllerDecoupler.h */; };
+		602704DE29F7CC13000DE9F8 /* JHPP.m in Sources */ = {isa = PBXBuildFile; fileRef = 602704D629F7CC13000DE9F8 /* JHPP.m */; };
+		602704DF29F7CC13000DE9F8 /* JHDragView.h in Headers */ = {isa = PBXBuildFile; fileRef = 602704D729F7CC13000DE9F8 /* JHDragView.h */; };
+		EA75E01426D0E9AA009C3417 /* imgui.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75E00626D0E9AA009C3417 /* imgui.h */; };
+		EA75E01526D0E9AA009C3417 /* imstb_textedit.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75E00726D0E9AA009C3417 /* imstb_textedit.h */; };
+		EA75E01626D0E9AA009C3417 /* imconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75E00826D0E9AA009C3417 /* imconfig.h */; };
+		EA75E01726D0E9AA009C3417 /* imgui_widgets.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA75E00926D0E9AA009C3417 /* imgui_widgets.cpp */; };
+		EA75E01826D0E9AA009C3417 /* imstb_truetype.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75E00A26D0E9AA009C3417 /* imstb_truetype.h */; };
+		EA75E01926D0E9AA009C3417 /* imgui_impl_metal.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA75E00C26D0E9AA009C3417 /* imgui_impl_metal.mm */; };
+		EA75E01A26D0E9AA009C3417 /* imgui_impl_metal.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75E00D26D0E9AA009C3417 /* imgui_impl_metal.h */; };
+		EA75E01B26D0E9AA009C3417 /* imgui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA75E00E26D0E9AA009C3417 /* imgui.cpp */; };
+		EA75E01C26D0E9AA009C3417 /* imgui_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75E00F26D0E9AA009C3417 /* imgui_internal.h */; };
+		EA75E01D26D0E9AA009C3417 /* imstb_rectpack.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75E01026D0E9AA009C3417 /* imstb_rectpack.h */; };
+		EA75E01E26D0E9AA009C3417 /* imgui_tables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA75E01126D0E9AA009C3417 /* imgui_tables.cpp */; };
+		EA75E01F26D0E9AA009C3417 /* imgui_demo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA75E01226D0E9AA009C3417 /* imgui_demo.cpp */; };
+		EA75E02026D0E9AA009C3417 /* imgui_draw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA75E01326D0E9AA009C3417 /* imgui_draw.cpp */; };
+		EA75E03426D0F5B3009C3417 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA75E02C26D0F5B3009C3417 /* AppDelegate.m */; };
+		EA75E03526D0F5B3009C3417 /* SceneDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75E02D26D0F5B3009C3417 /* SceneDelegate.h */; };
+		EA75E03826D0F5B3009C3417 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EA75E03026D0F5B3009C3417 /* SceneDelegate.m */; };
+		EA75E03A26D0F5B3009C3417 /* AppDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75E03226D0F5B3009C3417 /* AppDelegate.h */; };
+		EA75E03D26D0F662009C3417 /* ImGuiDrawView.h in Headers */ = {isa = PBXBuildFile; fileRef = EA75E03B26D0F662009C3417 /* ImGuiDrawView.h */; };
+		EA75E03E26D0F662009C3417 /* ImGuiDrawView.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA75E03C26D0F662009C3417 /* ImGuiDrawView.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		187BE2852270D52100033424 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		194F3B39218327B10070F5BC /* imgui.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = imgui.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		194F3B3C218327B10070F5BC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		194F3B41218327B10070F5BC /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		194F3B43218327B10070F5BC /* imgui-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "imgui-Prefix.pch"; sourceTree = "<group>"; };
+		194F3B49218327B10070F5BC /* HackMenu.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = HackMenu.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/HackMenu.plist; sourceTree = "<group>"; };
+		194F3BA6218328020070F5BC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		194F3BAB218328020070F5BC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		602704CD29F7C8FD000DE9F8 /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.1.sdk/System/iOSSupport/System/Library/Frameworks/MetalKit.framework; sourceTree = DEVELOPER_DIR; };
+		602704D029F7CC13000DE9F8 /* PubgLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PubgLoad.h; sourceTree = "<group>"; };
+		602704D129F7CC13000DE9F8 /* JHPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHPP.h; sourceTree = "<group>"; };
+		602704D229F7CC13000DE9F8 /* JHUIViewControllerDecoupler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHUIViewControllerDecoupler.m; sourceTree = "<group>"; };
+		602704D329F7CC13000DE9F8 /* JHDragView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHDragView.m; sourceTree = "<group>"; };
+		602704D429F7CC13000DE9F8 /* PubgLoad.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PubgLoad.mm; sourceTree = "<group>"; };
+		602704D529F7CC13000DE9F8 /* JHUIViewControllerDecoupler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHUIViewControllerDecoupler.h; sourceTree = "<group>"; };
+		602704D629F7CC13000DE9F8 /* JHPP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JHPP.m; sourceTree = "<group>"; };
+		602704D729F7CC13000DE9F8 /* JHDragView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JHDragView.h; sourceTree = "<group>"; };
+		EA75E00626D0E9AA009C3417 /* imgui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui.h; sourceTree = "<group>"; };
+		EA75E00726D0E9AA009C3417 /* imstb_textedit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_textedit.h; sourceTree = "<group>"; };
+		EA75E00826D0E9AA009C3417 /* imconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imconfig.h; sourceTree = "<group>"; };
+		EA75E00926D0E9AA009C3417 /* imgui_widgets.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_widgets.cpp; sourceTree = "<group>"; };
+		EA75E00A26D0E9AA009C3417 /* imstb_truetype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_truetype.h; sourceTree = "<group>"; };
+		EA75E00C26D0E9AA009C3417 /* imgui_impl_metal.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = imgui_impl_metal.mm; sourceTree = "<group>"; };
+		EA75E00D26D0E9AA009C3417 /* imgui_impl_metal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_impl_metal.h; sourceTree = "<group>"; };
+		EA75E00E26D0E9AA009C3417 /* imgui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui.cpp; sourceTree = "<group>"; };
+		EA75E00F26D0E9AA009C3417 /* imgui_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imgui_internal.h; sourceTree = "<group>"; };
+		EA75E01026D0E9AA009C3417 /* imstb_rectpack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imstb_rectpack.h; sourceTree = "<group>"; };
+		EA75E01126D0E9AA009C3417 /* imgui_tables.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_tables.cpp; sourceTree = "<group>"; };
+		EA75E01226D0E9AA009C3417 /* imgui_demo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_demo.cpp; sourceTree = "<group>"; };
+		EA75E01326D0E9AA009C3417 /* imgui_draw.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = imgui_draw.cpp; sourceTree = "<group>"; };
+		EA75E02C26D0F5B3009C3417 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EA75E02D26D0F5B3009C3417 /* SceneDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		EA75E03026D0F5B3009C3417 /* SceneDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		EA75E03226D0F5B3009C3417 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EA75E03B26D0F662009C3417 /* ImGuiDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImGuiDrawView.h; sourceTree = "<group>"; };
+		EA75E03C26D0F662009C3417 /* ImGuiDrawView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ImGuiDrawView.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		194F3B35218327B10070F5BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				187BE2862270D52200033424 /* Metal.framework in Frameworks */,
+				194F3B3D218327B10070F5BC /* Foundation.framework in Frameworks */,
+				194F3BAD218328020070F5BC /* CoreGraphics.framework in Frameworks */,
+				602704CE29F7C8FD000DE9F8 /* MetalKit.framework in Frameworks */,
+				194F3BB2218328020070F5BC /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		194F3B2F218327B10070F5BC = {
+			isa = PBXGroup;
+			children = (
+				194F3B3E218327B10070F5BC /* HackMenu */,
+				194F3B3B218327B10070F5BC /* Frameworks */,
+				194F3B3A218327B10070F5BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		194F3B3A218327B10070F5BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				194F3B39218327B10070F5BC /* imgui.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		194F3B3B218327B10070F5BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				602704CD29F7C8FD000DE9F8 /* MetalKit.framework */,
+				187BE2852270D52100033424 /* Metal.framework */,
+				194F3BA6218328020070F5BC /* CoreGraphics.framework */,
+				194F3BAB218328020070F5BC /* UIKit.framework */,
+				194F3B3C218327B10070F5BC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		194F3B3E218327B10070F5BC /* HackMenu */ = {
+			isa = PBXGroup;
+			children = (
+				602704CF29F7CC13000DE9F8 /* IGG */,
+				EA75E00426D0E969009C3417 /* imGui */,
+				194F3B3F218327B10070F5BC /* Package */,
+				194F3B42218327B10070F5BC /* Supporting Files */,
+			);
+			path = HackMenu;
+			sourceTree = "<group>";
+		};
+		194F3B3F218327B10070F5BC /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				194F3B40218327B10070F5BC /* DEBIAN */,
+				194F3B46218327B10070F5BC /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		194F3B40218327B10070F5BC /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				194F3B41218327B10070F5BC /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		194F3B42218327B10070F5BC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				194F3B43218327B10070F5BC /* imgui-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		194F3B46218327B10070F5BC /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				194F3B47218327B10070F5BC /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		194F3B47218327B10070F5BC /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				194F3B48218327B10070F5BC /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		194F3B48218327B10070F5BC /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				194F3B49218327B10070F5BC /* HackMenu.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+		602704CF29F7CC13000DE9F8 /* IGG */ = {
+			isa = PBXGroup;
+			children = (
+				602704D729F7CC13000DE9F8 /* JHDragView.h */,
+				602704D329F7CC13000DE9F8 /* JHDragView.m */,
+				602704D129F7CC13000DE9F8 /* JHPP.h */,
+				602704D629F7CC13000DE9F8 /* JHPP.m */,
+				602704D529F7CC13000DE9F8 /* JHUIViewControllerDecoupler.h */,
+				602704D229F7CC13000DE9F8 /* JHUIViewControllerDecoupler.m */,
+				602704D029F7CC13000DE9F8 /* PubgLoad.h */,
+				602704D429F7CC13000DE9F8 /* PubgLoad.mm */,
+			);
+			path = IGG;
+			sourceTree = "<group>";
+		};
+		EA75E00426D0E969009C3417 /* imGui */ = {
+			isa = PBXGroup;
+			children = (
+				EA75E03226D0F5B3009C3417 /* AppDelegate.h */,
+				EA75E02C26D0F5B3009C3417 /* AppDelegate.m */,
+				EA75E02D26D0F5B3009C3417 /* SceneDelegate.h */,
+				EA75E03026D0F5B3009C3417 /* SceneDelegate.m */,
+				EA75E03B26D0F662009C3417 /* ImGuiDrawView.h */,
+				EA75E03C26D0F662009C3417 /* ImGuiDrawView.mm */,
+				EA75E00526D0E9AA009C3417 /* imgui */,
+			);
+			path = imGui;
+			sourceTree = "<group>";
+		};
+		EA75E00526D0E9AA009C3417 /* imgui */ = {
+			isa = PBXGroup;
+			children = (
+				EA75E00626D0E9AA009C3417 /* imgui.h */,
+				EA75E00726D0E9AA009C3417 /* imstb_textedit.h */,
+				EA75E00826D0E9AA009C3417 /* imconfig.h */,
+				EA75E00926D0E9AA009C3417 /* imgui_widgets.cpp */,
+				EA75E00A26D0E9AA009C3417 /* imstb_truetype.h */,
+				EA75E00B26D0E9AA009C3417 /* Metal */,
+				EA75E00E26D0E9AA009C3417 /* imgui.cpp */,
+				EA75E00F26D0E9AA009C3417 /* imgui_internal.h */,
+				EA75E01026D0E9AA009C3417 /* imstb_rectpack.h */,
+				EA75E01126D0E9AA009C3417 /* imgui_tables.cpp */,
+				EA75E01226D0E9AA009C3417 /* imgui_demo.cpp */,
+				EA75E01326D0E9AA009C3417 /* imgui_draw.cpp */,
+			);
+			path = imgui;
+			sourceTree = "<group>";
+		};
+		EA75E00B26D0E9AA009C3417 /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				EA75E00C26D0E9AA009C3417 /* imgui_impl_metal.mm */,
+				EA75E00D26D0E9AA009C3417 /* imgui_impl_metal.h */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		194F3B36218327B10070F5BC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				602704D929F7CC13000DE9F8 /* JHPP.h in Headers */,
+				EA75E03A26D0F5B3009C3417 /* AppDelegate.h in Headers */,
+				EA75E01A26D0E9AA009C3417 /* imgui_impl_metal.h in Headers */,
+				602704DF29F7CC13000DE9F8 /* JHDragView.h in Headers */,
+				602704D829F7CC13000DE9F8 /* PubgLoad.h in Headers */,
+				EA75E03526D0F5B3009C3417 /* SceneDelegate.h in Headers */,
+				EA75E01C26D0E9AA009C3417 /* imgui_internal.h in Headers */,
+				EA75E01826D0E9AA009C3417 /* imstb_truetype.h in Headers */,
+				EA75E01626D0E9AA009C3417 /* imconfig.h in Headers */,
+				EA75E01426D0E9AA009C3417 /* imgui.h in Headers */,
+				EA75E01D26D0E9AA009C3417 /* imstb_rectpack.h in Headers */,
+				EA75E03D26D0F662009C3417 /* ImGuiDrawView.h in Headers */,
+				EA75E01526D0E9AA009C3417 /* imstb_textedit.h in Headers */,
+				602704DD29F7CC13000DE9F8 /* JHUIViewControllerDecoupler.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		194F3B38218327B10070F5BC /* imgui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 194F3B4C218327B10070F5BC /* Build configuration list for PBXNativeTarget "imgui" */;
+			buildPhases = (
+				194F3B34218327B10070F5BC /* Sources */,
+				194F3B35218327B10070F5BC /* Frameworks */,
+				194F3B36218327B10070F5BC /* Headers */,
+				194F3B37218327B10070F5BC /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = imgui;
+			productName = HackMenu;
+			productReference = 194F3B39218327B10070F5BC /* imgui.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		194F3B30218327B10070F5BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					194F3B38218327B10070F5BC = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 194F3B33218327B10070F5BC /* Build configuration list for PBXProject "imgui" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 194F3B2F218327B10070F5BC;
+			productRefGroup = 194F3B2F218327B10070F5BC;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				194F3B38218327B10070F5BC /* imgui */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		194F3B37218327B10070F5BC /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		194F3B34218327B10070F5BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA75E01726D0E9AA009C3417 /* imgui_widgets.cpp in Sources */,
+				EA75E01F26D0E9AA009C3417 /* imgui_demo.cpp in Sources */,
+				EA75E03826D0F5B3009C3417 /* SceneDelegate.m in Sources */,
+				EA75E01B26D0E9AA009C3417 /* imgui.cpp in Sources */,
+				EA75E01926D0E9AA009C3417 /* imgui_impl_metal.mm in Sources */,
+				EA75E01E26D0E9AA009C3417 /* imgui_tables.cpp in Sources */,
+				EA75E02026D0E9AA009C3417 /* imgui_draw.cpp in Sources */,
+				602704DA29F7CC13000DE9F8 /* JHUIViewControllerDecoupler.m in Sources */,
+				602704DE29F7CC13000DE9F8 /* JHPP.m in Sources */,
+				EA75E03E26D0F662009C3417 /* ImGuiDrawView.mm in Sources */,
+				602704DC29F7CC13000DE9F8 /* PubgLoad.mm in Sources */,
+				602704DB29F7CC13000DE9F8 /* JHDragView.m in Sources */,
+				EA75E03426D0F5B3009C3417 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		194F3B4A218327B10070F5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = fast;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"HackMenu\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		194F3B4B218327B10070F5BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/frameworks/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LIBRARY_SEARCH_PATHS = "$(MonkeyDevTheosPath)/vendor/lib/**";
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DTHEOS_INSTANCE_NAME=\"\\\"HackMenu\\\"\"";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		194F3B4D218327B10070F5BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				DEVELOPMENT_TEAM = 7RVGRL9LRW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackMenu/imgui-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ESP",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		194F3B4E218327B10070F5BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMPILER_INDEX_STORE_ENABLE = NO;
+				DEVELOPMENT_TEAM = 7RVGRL9LRW;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HackMenu/imgui-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ESP",
+				);
+				MonkeyDevBuildPackageOnAnyBuild = NO;
+				MonkeyDevClearUiCacheOnInstall = NO;
+				MonkeyDevCopyOnBuild = NO;
+				MonkeyDevDeviceIP = "";
+				MonkeyDevDevicePassword = "";
+				MonkeyDevDevicePort = "";
+				MonkeyDevInstallOnAnyBuild = YES;
+				MonkeyDevInstallOnProfiling = YES;
+				MonkeyDevkillProcessOnInstall = SpringBoard;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "-Wl,-sectcreate,__RESTRICT,__restrict,/dev/null";
+				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		194F3B33218327B10070F5BC /* Build configuration list for PBXProject "imgui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				194F3B4A218327B10070F5BC /* Release */,
+				194F3B4B218327B10070F5BC /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		194F3B4C218327B10070F5BC /* Build configuration list for PBXNativeTarget "imgui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				194F3B4D218327B10070F5BC /* Release */,
+				194F3B4E218327B10070F5BC /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 194F3B30218327B10070F5BC /* Project object */;
+}
